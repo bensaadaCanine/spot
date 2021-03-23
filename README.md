@@ -3,7 +3,7 @@
 An AWS Account/IAM Role configured on this machine with EC2,CloudWatch Permissions.
 Also, Please prepare a KeyPair.
 
-# Porpuse:
+# Purpose:
 
 This script creates an AutoScale Group of EC2 instances with NGINX running on them.
 In case of CPU metric crosses 80 percent - It will create a new instance to balance
