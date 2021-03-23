@@ -69,9 +69,9 @@ def create_ec2_security_group(client):
             response = client.describe_security_groups(
                 GroupNames=[sg_name])
             sg_id = response["SecurityGroups"][0]["GroupId"]
-        print("Security Group {} already exists with Security Group ID: {} ".format(
-            sg_name, sg_id))
-        return sg_id, sg_name
+            print("Security Group {} already exists with Security Group ID: {} ".format(
+                sg_name, sg_id))
+            return sg_id, sg_name
 
 
 # Creating Launch Template With a UserData to create EC2 instance with NGINX on it.
