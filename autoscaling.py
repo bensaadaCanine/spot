@@ -165,6 +165,8 @@ def scaling_policy(groupName):
     except Exception as e:
         print("POLICY WAS NOT CREATED DUE TO THE FOLLOWING ERROR:")
         print(e)
+        # There is no point to try to create the alarm without a policy
+        return
 
     # Create CloudWatch Alarm within the policy
     try:
